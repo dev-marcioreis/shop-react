@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+/*==========Google Fonts==========*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*==========Reset CSS==========*/
+* {
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*==========Root==========*/
+:root {
+
+    --bg-color: #e5e5e5;
+    --card-color: #f6f9fc;
+    --primary-color: #0433FF;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #2c2c2c;
+    --shadow: 0 1px 4px hwb(0 0% 100% / 0.2);
+    --shadow1: 0 4px 20px rgba(10, 10, 10, 0.103);
+    --border: .1rem solid rgba(255, 255, 255, 0.788);
+    --transparent-color: rgba(0, 0, 0, 0);
+    --light-color: rgba(255, 255, 255, 0.945);
+
+    --transition: all 400ms ease;
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease;
+    
+    --cubic-anim: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+    
+    --container-lg: 90%;
+    --container-md: 100%;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*==========Base==========*/
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 8rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.5;
+    user-select: none;
 }
-
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar{
+    width: .5rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-track{
+    background: var(--black-color);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+.container {
+    width: var(--container-lg);
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+}
+h1, h2, h3, h4, h5 {
+    line-height: 1.2;
+}
+.section {
+    margin-block-start: 4rem;
+    padding: 2rem 2%;
+}
+.headers {
+    text-align: center;
+    margin-block-end: 3rem;
+}
+.btn {
+    display: inline-block;
+    margin-block-start: 1rem;
+    color: var(--white-color);
+    font-weight: 700;
+    background: var(--primary-color);
+    border-radius: .2rem;
+    font-size: 1.4rem;
+    padding: .6rem 2rem;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.btn:hover {
+    transform: scale(1.04);
+}
+.background {
+    background: #f6f9fc;
+    padding: 50px 0;
+}
+.flex-d {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-f {
+    display: flex;
+}
+.text {
+    text-align: right;
+}
+.row {
+    width: 50%;
 }
