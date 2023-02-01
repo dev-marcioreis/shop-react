@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Shop (ReactJS)
+Projeto em desenvolvimento.<br>
+Este projeto será um E-Commerce em React 18.<br>
+Link de acesso: 
+
+Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
