@@ -18,12 +18,14 @@
 /*==========Root==========*/
 :root {
 
-    --bg-color: #e5e5e5;
+    --bg-color: linear-gradient(50deg, var(--secondary-color), var(--primary-color));
     --card-color: #f6f9fc;
     --primary-color: #0433FF;
+    --secondary-color: #90a1f0;
     --white-color: #fff;
     --black-color: #000;
     --text-color: #2c2c2c;
+    --red-color: #f34b4b;
     --shadow: 0 1px 4px hwb(0 0% 100% / 0.2);
     --shadow1: 0 4px 20px rgba(10, 10, 10, 0.103);
     --border: .1rem solid rgba(255, 255, 255, 0.788);
@@ -50,16 +52,16 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
     line-height: 1.5;
-    user-select: none;
+    height: 100vh;
 }
 ::-webkit-scrollbar{
     width: .5rem;
 }
 ::-webkit-scrollbar-track{
-    background: var(--black-color);
+    background: var(--text-color);
 }
 ::-webkit-scrollbar-thumb{
-    background: var(--primary-color);
+    background: var(--white-color);
 }
 .container {
     width: var(--container-lg);
@@ -95,25 +97,16 @@ h1, h2, h3, h4, h5 {
 .btn:hover {
     transform: scale(1.04);
 }
-.background {
-    background: #f6f9fc;
-    padding: 50px 0;
-}
-.flex-d {
+.flex1 {
     display: flex;
     justify-content: space-between;
 }
-.flex-c {
+.flex2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.flex-f {
-    display: flex;
+button, input {
+    background: none;
 }
-.text {
-    text-align: right;
-}
-.row {
-    width: 50%;
-}
+
