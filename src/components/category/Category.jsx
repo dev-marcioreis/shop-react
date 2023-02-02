@@ -4,8 +4,8 @@ import Images from './images'
 const Category = () => {
   return (
     <>
-        <section>
-            <div>
+        <section className='section__category'>
+            <div className='category'>
               <h3 className='category__title'>categorias</h3>
               <div className="category__container">
                   {

@@ -1,8 +1,16 @@
+.products__title {
+    margin-block-start: 7rem;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: var(--white-color);
+}
 .products__content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     gap: 2rem;
-    margin-block-start: 5rem;
+    margin-block-start: 1.5rem;
     margin-block-end: 5rem;
 }
 .product__box {
@@ -77,11 +85,15 @@
     width: 100%;
     text-transform: uppercase;
     border-radius: 0 0 1rem 1rem;
-    background: var(--primary-color);
+    background: var(--text-color);
     padding: .7rem 1.5rem;
     color: var(--white-color);
     font-size: 1rem;
     font-weight: 600;
     margin-block-start: .7rem;
     cursor: pointer;
+    transition: var(--transition);
+}
+.product__btn:hover {
+    background: var(--primary-color);
 }
