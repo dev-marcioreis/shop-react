@@ -3,7 +3,7 @@ Projeto em desenvolvimento.<br>
 Este projeto será um E-Commerce em React 18.<br>
 Link de acesso: https://dev-marcioreis.github.io/shop-react/
 ![image](https://user-images.githubusercontent.com/122680054/216336063-b1be0976-ef7b-419e-b50b-4fb127bfd137.png)
-![image](https://user-images.githubusercontent.com/122680054/216336207-3a479bed-3d0e-4e09-986d-508fac7b21de.png)
+![image](https://user-images.githubusercontent.com/122680054/216353380-c7ca6510-61b5-46cf-bc55-79cf9a58b095.png)
 
 
 
