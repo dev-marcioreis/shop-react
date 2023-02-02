@@ -22,3 +22,49 @@
     object-fit: contain;
     height: 100%;
 }
+
+
+/*==========Media Query==========*/
+@media (max-width: 1024px) {
+    .slider__card {
+        margin-block-end: 4rem;
+    }
+    .left h2 {
+        font-size: 1.2rem;
+    }
+    .left p {
+        font-size: 1rem;
+        line-height: 2;
+    }
+    .right {
+        height: 20rem;
+        padding: .5rem 0;
+    }
+    .right img {
+        object-fit: contain;
+        height: 100%;
+    }
+    
+}
+
+
+/*==========Media Query==========*/
+@media (max-width: 768px) {
+    .slider__card {
+        margin-block-end: 5rem;
+    }
+    .left h2 {
+        font-size: 1.1rem;
+    }
+    .left p {
+        font-size: .9rem;
+    }
+    .right {
+        height: 17rem;
+    }
+    .right img {
+        object-fit: contain;
+        height: 100%;
+        margin-block-start: 1rem;
+    }
+}
