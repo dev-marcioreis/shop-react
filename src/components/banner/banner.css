@@ -1,14 +1,13 @@
 .banner {
     position: relative;
-    padding: 2.5rem 0;
+    padding: 3rem 0;
     height: 100vh;
 }
 .banner__content {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     gap: 2rem;
-    margin: 0 auto;
 }
 .banner__text {
     display: flex;
@@ -19,14 +18,17 @@
 .banner__text h1 {
     font-size: 6rem;
     font-weight: 700;
-    color: var(--text-color);
     text-transform: uppercase;
     letter-spacing: -2px;
+    background-image: linear-gradient(to top, var(--black-color) 0%, var(--primary-color) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--transparent-color);
 }
 .banner__text p {
-    font-size: 2rem;
-    font-weight: 200;
-    color: var(--white-color);
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--text-color);
 }
 .cta {
     display: flex;
@@ -51,6 +53,10 @@
 }
 .banner__image {
     position: relative;
-    width: 35%;
+    width: 32%;
     filter: contrast(1.5);
+    transition: var(--transition);
+}
+.banner__image:hover {
+    transform: scale(1.02) rotate(-2deg);
 }
