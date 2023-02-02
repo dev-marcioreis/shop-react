@@ -76,6 +76,7 @@
     }
     .banner__text p {
         font-size: 1.1rem;
+        text-align: center;
     }
     .banner__cta, .banner__cta-1 {
         font-size: 1rem;
@@ -92,23 +93,21 @@
 /*==========Media Query==========*/
 @media (max-width: 768px) {
     .banner {
-        padding: 1.5rem 0;
+        padding: .5rem 0;
     }
     .banner__text h1 {
-        font-size: 3.2rem;
-        font-weight: 300;
+        font-size: 3rem;
+        font-weight: 400;
         margin-block-end: .5rem;
-    }
-    .banner__text p {
-        font-size: 1rem;
+        background-image: linear-gradient(to top, var(--primary-color) 0%, var(--text-color) 100%);
     }
     .cta {
         gap: 1rem;
-        margin-block-start: 1rem;
+        margin-block-start: .7rem;
     }
     .banner__cta, .banner__cta-1 {
         font-size: 1rem;
-        padding: .3rem .7rem;
+        padding: .4rem .7rem;
     }
     .banner__image {
         width: 82%;

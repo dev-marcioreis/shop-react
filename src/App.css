@@ -60,7 +60,7 @@ body {
     background: var(--text-color);
 }
 ::-webkit-scrollbar-thumb{
-    background: var(--white-color);
+    background: var(--bg-color);
 }
 .container {
     width: var(--container-lg);
