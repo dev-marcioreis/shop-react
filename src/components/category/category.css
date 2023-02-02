@@ -1,8 +1,16 @@
 .category__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
     gap: 2rem;
     transition: var(--transition);
+}
+.category__title {
+    margin-block-end: 1.5rem;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: var(--white-color);
 }
 .box__image {
     position: relative;
@@ -46,6 +54,7 @@
 /*==========Media Query==========*/
 @media (max-width: 1024px) {
     .category__container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
         gap: 1rem;
     }
     .box__image {

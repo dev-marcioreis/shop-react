@@ -68,7 +68,7 @@ const products = [
         name: 'Gopro Hero 11 Black',
         brand: 'Gopro',
         description: 'Redesigned from scratch and completely revised.',
-        price: 'R$ 3.239,00',
+        price: 'R$ 3.239',
         image: 'https://res.cloudinary.com/dpuikgstw/image/upload/v1675367610/mks/gopro_nkviwe.png'
       },
       {

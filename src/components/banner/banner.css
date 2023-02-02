@@ -1,7 +1,7 @@
 .banner {
     position: relative;
     padding: 3rem 0;
-    height: 100vh;
+    margin-block-end: 8rem;
 }
 .banner__content {
     display: flex;
@@ -69,7 +69,7 @@
         padding: 1rem 3rem;
     }
     .banner__content {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .banner__text h1 {
         font-size: 3.5rem;
@@ -82,7 +82,7 @@
         font-size: 1rem;
     }
     .banner__image {
-        width: 47%;
+        width: 60%;
     }
     .banner__image:hover {
         transform: scale(0) rotate(0);
@@ -95,11 +95,8 @@
     .banner {
         padding: .5rem 0;
     }
-    .banner__content {
-        flex-direction: column-reverse;
-    }
     .banner__text h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
         font-weight: 400;
         margin-block-end: .5rem;
         background-image: linear-gradient(to top, var(--primary-color) 0%, var(--text-color) 100%);
@@ -113,7 +110,7 @@
         padding: .4rem .7rem;
     }
     .banner__image {
-        width: 82%;
+        width: 80%;
     }
 
 }

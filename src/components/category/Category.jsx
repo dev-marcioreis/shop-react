@@ -4,8 +4,9 @@ import Images from './images'
 const Category = () => {
   return (
     <>
-        <section className='section'>
-            <div className='container'>
+        <section>
+            <div>
+              <h3 className='category__title'>categorias</h3>
               <div className="category__container">
                   {
                     Images.map((value, index) => {

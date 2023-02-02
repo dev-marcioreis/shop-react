@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <>
         <section className="banner">
-          <div className="banner__content">
+          <div className="banner__content container">
             <div className="banner__text">
               <h1>beats stúdio</h1>
               <p>Autênticos fones de ouvido circum-auriculares sem fio com cancelamento de ruído</p>
