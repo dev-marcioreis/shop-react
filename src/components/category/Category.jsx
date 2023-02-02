@@ -3,7 +3,11 @@ import './category.css'
 const Category = () => {
   return (
     <>
-        <h1>Category</h1>
+        <section className="section category">
+          <div className="container">
+            <h1>Category</h1>
+          </div>
+        </section>
     </>
   )
 }

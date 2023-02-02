@@ -1,5 +1,8 @@
 import Banner from '../banner/Banner'
 import SliderCard from '../slider/SliderCard'
+import Category from '../category/Category'
+import Products from '../products/Products'
+
 import './home.css'
 
 const Home = () => {
@@ -10,6 +13,8 @@ const Home = () => {
             <div className="container">
               <Banner />
               <SliderCard />
+              <Category />
+              <Products />
             </div>
           </div>
         </section>
