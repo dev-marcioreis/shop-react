@@ -3,8 +3,9 @@
     top: 0;
     left: 0;
     right: 0;
-    padding: .3rem 0;
+    padding: .4rem 0;
     background: var(--text-color);
+    transition: var(--transition);
 }
 .container .flex2 {
     gap: 3rem;
@@ -49,7 +50,7 @@
 .header__cart {
     position: relative;
     padding: 0 .7rem;
-    margin-block-start: .2rem;
+    margin-block-start: .3rem;
     transition: var(--transition);
 }
 .header__cart i {
@@ -84,6 +85,9 @@
 
 /*==========Media Query==========*/
 @media (max-width: 1024px) {
+    .header {
+        padding: .6rem 0;
+    }
     .header__btn {
         position: relative;
         right: 0rem;
@@ -141,6 +145,9 @@
 
 /*==========Media Query==========*/
 @media (max-width: 768px) {
+    .header {
+        padding: .8rem 0;
+    }
     .header__list {
         flex-direction: column;
         padding: 2rem .5rem;
