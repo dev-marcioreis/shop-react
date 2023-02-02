@@ -1,5 +1,4 @@
 import Banner from '../banner/Banner'
-import NewsLetter from '../newsLetter/NewsLetter'
 import './home.css'
 
 const Home = () => {
@@ -11,7 +10,6 @@ const Home = () => {
               <Banner />
             </div>
           </div>
-          <NewsLetter />
         </section>
     </>
   )
