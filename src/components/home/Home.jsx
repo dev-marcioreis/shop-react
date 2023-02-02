@@ -4,8 +4,11 @@ import Category from '../category/Category'
 import Products from '../products/Products'
 
 import './home.css'
+import { useGetAllProductsQuery } from '../../features/productsApi'
 
 const Home = () => {
+  const { data, error, isLoading } = useGetAllProductsQuery()
+
   return (
     <>
         <section className='home'>

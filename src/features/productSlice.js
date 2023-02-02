@@ -3,14 +3,20 @@ import axios from "axios";
 
 const initialState = {
     items: [],
-    status: null
+    status: null,
+    error: null
 }
 
 export const productsFetch = createAsyncThunk(
     'products/productsFetch', 
-    async() => {
-        const response = await axios.get('http://localhost:5000/products')
+    async (id = null, { rejectWithValue }) => {
+        try {
+            const response = await axios.get('http://localhost:5000/products')
         return response?.data
+        } catch (error) {
+            return rejectWithValue('an error occured')
+        }
+        
     }
 )
 
@@ -28,6 +34,7 @@ const productsSlice = createSlice({
         },
         [productsFetch.rejected]: (state, action) => {
             state.status = 'rejected'
+            state.error = action.payload
         }
     }
 })
