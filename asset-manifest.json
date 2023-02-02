@@ -1,14 +1,22 @@
 {
   "files": {
-    "main.css": "/shop-react/static/css/main.43c9ff2c.css",
-    "main.js": "/shop-react/static/js/main.3f1669d0.js",
+    "main.css": "/shop-react/static/css/main.12f21d10.css",
+    "main.js": "/shop-react/static/js/main.1cdc9b1d.js",
+    "static/media/slide-3.png": "/shop-react/static/media/slide-3.bdd815f78a926a289bb7.png",
+    "static/media/slide-2.png": "/shop-react/static/media/slide-2.8423b117aadcb177fb18.png",
+    "static/media/slide-4.png": "/shop-react/static/media/slide-4.0b5eafd25d3a7181e425.png",
     "static/media/banner.png": "/shop-react/static/media/banner.7b6d194c7e937f18bbeb.png",
+    "static/media/slide-1.png": "/shop-react/static/media/slide-1.1435a8dd77c431fcdab8.png",
+    "static/media/slick.svg": "/shop-react/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/shop-react/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/shop-react/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/shop-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/shop-react/index.html",
-    "main.43c9ff2c.css.map": "/shop-react/static/css/main.43c9ff2c.css.map",
-    "main.3f1669d0.js.map": "/shop-react/static/js/main.3f1669d0.js.map"
+    "main.12f21d10.css.map": "/shop-react/static/css/main.12f21d10.css.map",
+    "main.1cdc9b1d.js.map": "/shop-react/static/js/main.1cdc9b1d.js.map"
   },
   "entrypoints": [
-    "static/css/main.43c9ff2c.css",
-    "static/js/main.3f1669d0.js"
+    "static/css/main.12f21d10.css",
+    "static/js/main.1cdc9b1d.js"
   ]
 }
