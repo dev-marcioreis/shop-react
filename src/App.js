@@ -4,6 +4,7 @@ import Header from './components/header/Header'
 import Home from './components/home/Home'
 import Footer from './components/footer/Footer'
 import NotFound from './components/notFound/NotFound';
+import Cart from './components/cart/Cart'
 
 
 
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/shop-react' element={<Home />} />
+        <Route path='/cart' element={<Cart />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />

@@ -3,7 +3,11 @@ import './cart.css'
 const Cart = () => {
   return (
     <>
-        <h1>Cart</h1>
+        <section className="section cart">
+          <div className="container">
+            <h1>Cart</h1>
+          </div>
+        </section>
     </>
   )
 }
