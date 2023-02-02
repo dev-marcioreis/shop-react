@@ -1,11 +1,24 @@
 import './category.css'
+import Images from './images'
 
 const Category = () => {
   return (
     <>
-        <section className="section category">
+        <section className="section">
           <div className="container">
-            <h1>Category</h1>
+            <div className="category flex2">
+              {
+                Images.map((value, index) => {
+                  return (
+                    <div className="category__box" key={index}>
+                      <div className="box__image">
+                        <img src={value.categoryImg} alt={value.name} />
+                      </div>
+                    </div>
+                  )
+                })
+              }
+            </div>
           </div>
         </section>
     </>
