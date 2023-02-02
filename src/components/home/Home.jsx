@@ -1,7 +1,6 @@
 import Banner from '../banner/Banner'
 import SliderCard from '../slider/SliderCard'
 import Category from '../category/Category'
-import Products from '../products/Products'
 
 import './home.css'
 
@@ -14,7 +13,6 @@ const Home = () => {
               <Banner />
               <SliderCard />
               <Category />
-              <Products />
             </div>
           </div>
         </section>

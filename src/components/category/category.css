@@ -1,8 +1,13 @@
+.category__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 2rem;
+    transition: var(--transition);
+}
 .box__image {
     position: relative;
     overflow: hidden;
-    width: 15rem;
-    padding: .5rem 0;
+    padding: 1rem;
     box-shadow: var(--shadow1);
     border-radius: .5rem;
     transition: var(--transition);
@@ -16,6 +21,8 @@
 .box__image img:hover {
     animation: shakeIcons .5s var(--cubic-anim) both;
 }
+
+/*==========Animation==========*/
 @keyframes shakeIcons {
     0%, 100% {
         transform: rotate(0);
@@ -35,3 +42,27 @@
     }
 }
 
+
+/*==========Media Query==========*/
+@media (max-width: 1024px) {
+    .category__container {
+        gap: 1rem;
+    }
+    .box__image {
+        background: var(--white-color);
+    }
+
+}
+
+
+/*==========Media Query==========*/
+@media (max-width: 768px) {
+    .category__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .box__image {
+        background: var(--text-color);
+    }
+
+}
