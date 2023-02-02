@@ -12,6 +12,7 @@ const Header = () => {
   return (
     <>
         <header className="header">
+          <div class="circle"></div>
           <div className="container flex2">
           <div className="header__logo">
               <Link to='/'><h2 className='logo'>shop</h2></Link>

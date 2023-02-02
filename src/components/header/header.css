@@ -6,6 +6,18 @@
     padding: .4rem 0;
     background: var(--text-color);
     transition: var(--transition);
+    z-index: 10;
+}
+.circle {
+    position: absolute;
+    filter: blur(100px);
+    border-radius: 50%;
+    width: 400px;
+    height: 500px;
+    top: 10rem;
+    right: -17rem;
+    background-color: var(--white-color);
+    opacity: .8;
 }
 .container .flex2 {
     gap: 3rem;

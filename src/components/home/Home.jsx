@@ -1,3 +1,4 @@
+import Banner from '../banner/Banner'
 import './home.css'
 
 const Home = () => {
@@ -5,7 +6,7 @@ const Home = () => {
     <>
         <section className="section">
           <div className="container">
-            <h1>Home</h1>
+            <Banner />
           </div>
         </section>
     </>
