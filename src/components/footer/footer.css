@@ -35,12 +35,15 @@ footer {
     font-size: 1rem;
     color: var(--white-color);
 }
-.footer__container a:hover {
+.footer__container .link:hover {
     color: var(--white-color);
 }
 .footer__container article h4 {
     margin-block-end: .6rem;
     font-size: 1rem;
+}
+.footer__container article .link {
+    color: var(--black-color);
 }
 .footer__social {
     margin-block-start: 1rem;
@@ -61,4 +64,28 @@ footer {
     padding: 1.5rem 0;
     margin-block-start: 4rem;
     font-size: 1rem;
+}
+
+
+/*==========Media Query==========*/
+@media (max-width: 1024px) {
+    footer {
+        padding-top: 2rem;
+    }
+    .footer__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+    }
+    .footer__container .link:hover {
+        color: var(--black-color);
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .footer__container {
+        grid-template-columns: 1fr;
+    }
+
 }
