@@ -4,7 +4,7 @@ import './footer.css'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className='footer'>
         <div className="container footer__container">
             <article>
                 <div className="footer__logo">
@@ -12,32 +12,32 @@ const Footer = () => {
                 </div>
                 <p>As melhores marcas e os melhores produtos.</p>
                 <div className="footer__social">
-                    <a href="https://www.facebook.com/" target="_blank" rel='noreferrer noopener'><AiFillFacebook /></a>
-                    <a href="https://twitter.com/" target="_blank" rel='noreferrer noopener'><AiOutlineTwitter /></a>
-                    <a href="https://www.instagram.com/" target="_blank" rel='noreferrer noopener'><AiFillInstagram /></a>
-                    <a href="https://www.linkedin.com/" target="_blank" rel='noreferrer noopener'><AiFillLinkedin /></a>
+                    <Link to="https://www.facebook.com/" target="_blank" rel='noreferrer noopener'><AiFillFacebook /></Link>
+                    <Link to="https://twitter.com/" target="_blank" rel='noreferrer noopener'><AiOutlineTwitter /></Link>
+                    <Link to="https://www.instagram.com/" target="_blank" rel='noreferrer noopener'><AiFillInstagram /></Link>
+                    <Link to="https://www.linkedin.com/" target="_blank" rel='noreferrer noopener'><AiFillLinkedin /></Link>
                 </div>
             </article>
             <article>
                 <h4>Institucional</h4>
-                <Link to='/' className='link'>Home</Link>
-                <Link to='/' className='link'>Sobre Nós</Link>
-                <Link to='/' className='link'>Categorias</Link>
-                <Link to='/' className='link'>Fale Conosco</Link>
+                <Link to='/' className='footer__link'>Home</Link>
+                <Link to='/' className='footer__link'>Sobre Nós</Link>
+                <Link to='/' className='footer__link'>Categorias</Link>
+                <Link to='/' className='footer__link'>Fale Conosco</Link>
             </article>
             <article>
                 <h4>Suporte</h4>
-                <Link to='/' className='link'>Pedidos</Link>
-                <Link to='/' className='link'>Entrega</Link>
-                <Link to='/' className='link'>Devolução</Link>
-                <Link to='/' className='link'>Cancelamento</Link>
+                <Link to='/' className='footer__link'>Pedidos</Link>
+                <Link to='/' className='footer__link'>Entrega</Link>
+                <Link to='/' className='footer__link'>Devolução</Link>
+                <Link to='/' className='footer__link'>Cancelamento</Link>
             </article>
             <article>
                 <h4>Corporativo</h4>
-                <Link to='/' className='link'>FAQ</Link>
-                <Link to='/' className='link'>Imprensa</Link>
-                <Link to='/' className='link'>Mpa do site</Link>
-                <Link to='/' className='link'>Trabalhe Conosco</Link>
+                <Link to='/' className='footer__link'>FAQ</Link>
+                <Link to='/' className='footer__link'>Imprensa</Link>
+                <Link to='/' className='footer__link'>Mpa do site</Link>
+                <Link to='/' className='footer__link'>Trabalhe Conosco</Link>
             </article>
         </div>
         <div className="footer__copy">
