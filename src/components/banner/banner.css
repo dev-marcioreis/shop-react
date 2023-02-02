@@ -95,6 +95,9 @@
     .banner {
         padding: .5rem 0;
     }
+    .banner__content {
+        flex-direction: column-reverse;
+    }
     .banner__text h1 {
         font-size: 3rem;
         font-weight: 400;
