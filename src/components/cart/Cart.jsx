@@ -27,7 +27,7 @@ const Cart = () => {
                     </Link>
                 </div>
               ) : (<>
-                <div className="cart__titles flex2">
+                <div className="cart__titles">
                   <h3>item</h3>
                   <h3>valor</h3>
                   <h3>quantidade</h3>
@@ -38,11 +38,15 @@ const Cart = () => {
                     cart.cartItems?.map(cartItem => (
                       <div className="cart__item" key={cartItem.id}>
                         <div className="cart__product">
-                          <img src={cartItem.image} alt={cartItem.name} />
-                          <div>
-                            <h3>{cartItem.brand}</h3>
+                          <div className='cart__product-image'>
+                            <img src={cartItem.image} alt={cartItem.name} />
+                          </div>
+                          <div className='cart__info'>
                             <h3>{cartItem.name}</h3>
-                            <button><i><Delete /></i>remover</button>
+                            <button>
+                              <i><Delete /></i>
+                              <span>remover</span>
+                            </button>
                           </div>
                         </div>
                         <div className="cart__product-price">{cartItem.price}</div>

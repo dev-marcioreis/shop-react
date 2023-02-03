@@ -1,5 +1,7 @@
+.cart {
+    padding: 4rem 5rem;
+}
 .cart h2 {
-    margin-block-start: 4rem;
     margin-block-end: 3rem;
     padding: .5rem;
     text-align: center;
@@ -8,7 +10,6 @@
     color: var(--white-color);
     text-transform: capitalize;
     letter-spacing: 2px;
-    border-bottom: 3px solid hsla(0, 0%, 100%, 0.082);
 }
 .cart__empty {
     text-align: center;
@@ -36,4 +37,81 @@
 }
 .home__shop:hover i {
     transform: scale(1.5);
+}
+.cart__titles {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10rem;
+    margin-block-end: 1rem;
+    padding: .5rem;
+    border-bottom: 3px solid hsla(0, 0%, 100%, 0.082);
+}
+.cart__titles h3:nth-child(2) {
+    margin-left: 12rem;
+}
+.cart__titles h3:nth-child(4) {
+    margin-right: .5rem;
+}
+.cart__titles h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: hsla(0, 0%, 100%, 0.616);
+}
+.cart__item {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 14rem;
+}
+.cart__item {
+    border-bottom: 3px solid hsla(0, 0%, 100%, 0.082);
+    margin-block-end: 2rem;
+}
+.cart__product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.cart__product-image img {
+    padding: .5rem;
+}
+.cart__product:hover img {
+    transform: scale(1.04);
+}
+.cart__info h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.cart__info button {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-block-start: 1rem;
+    cursor: pointer;
+    color: hsla(0, 0%, 100%, 0.493);
+    transition: var(--transition);
+}
+.cart__info:hover button {
+    color: var(--red-color);
+}
+.cart__product-quantity {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 2rem;
+    box-shadow: var(--shadow);
+    padding: .5rem;
+    margin-left: -3rem;
+    color: var(--white-color);
+}
+.cart__product-quantity button {
+    font-size: 1.4rem;
+    cursor: pointer;
 }

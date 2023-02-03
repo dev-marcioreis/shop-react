@@ -1,5 +1,4 @@
 import { useDispatch } from 'react-redux'
-import { useNavigate } from "react-router-dom";
 import { addToCart } from '../../features/cartSlice'
 
 import './products.css'
@@ -9,11 +8,9 @@ import { BsFillBagFill as Bag } from 'react-icons/bs'
 
 const Products = () => {
     const dispatch = useDispatch()
-    const navigate = useNavigate()
 
     const handleAddToCart = product => {
         dispatch(addToCart(product));
-        navigate('/cart')
     }
 
   return (
