@@ -1,8 +1,18 @@
+import { useDispatch } from 'react-redux'
+import { addToCart } from '../../features/cartSlice'
+
 import './products.css'
 import ProductsItems from './ProductsItems'
 import { BsFillBagFill as Bag } from 'react-icons/bs'
 
+
 const Products = () => {
+    const dispatch = useDispatch()
+
+    const handleAddToCart = product => {
+        dispatch(addToCart(product))
+    }
+
   return (
     <>
         <section className="section">
@@ -23,9 +33,7 @@ const Products = () => {
                                             <p>{product.description}</p>
                                             <span className='product__price'>{product.price}</span>
                                         </div>
-                                        <button className="product__btn">
-                                            <i><Bag /></i>comprar
-                                        </button>
+                                        <button className="product__btn" onClick={() => handleAddToCart(product)}><i><Bag /></i>comprar</button>
                                     </div>
                                 )
                             })
