@@ -18,16 +18,16 @@ const Header = () => {
             </div>
             <ul className={mobileMenu ?  'header__list flex1' : 'link flex2'} onClick={() => setMobileMenu(false)}>
               <li className='header__link'>
-                <Link to='/shop-react'><i><Home /></i>home</Link>
+                <Link to='/'><i><Home /></i>home</Link>
               </li>
               <li className='header__link'>
-                <Link to='/shop-react'><i><About /></i>sobre nós</Link>
+                <Link to='/'><i><About /></i>sobre nós</Link>
               </li>
               <li className='header__link'>
-                <Link to='/shop-react'><i><Categ /></i>categorias</Link>
+                <Link to='/'><i><Categ /></i>categorias</Link>
               </li>
               <li className='header__link'>
-                <Link to='/shop-react'><i><Contac /></i>fale conosco</Link>
+                <Link to='/s'><i><Contac /></i>fale conosco</Link>
               </li>
             </ul>
               <div className="header__cart">

@@ -20,24 +20,24 @@ const Footer = () => {
             </article>
             <article>
                 <h4>Institucional</h4>
-                <Link to='/shop-react' className='footer__link'>Home</Link>
-                <Link to='/shop-react' className='footer__link'>Sobre Nós</Link>
-                <Link to='/shop-react' className='footer__link'>Categorias</Link>
-                <Link to='/shop-react' className='footer__link'>Fale Conosco</Link>
+                <Link to='/' className='footer__link'>Home</Link>
+                <Link to='/' className='footer__link'>Sobre Nós</Link>
+                <Link to='/' className='footer__link'>Categorias</Link>
+                <Link to='/' className='footer__link'>Fale Conosco</Link>
             </article>
             <article>
                 <h4>Suporte</h4>
-                <Link to='/shop-react' className='footer__link'>Pedidos</Link>
-                <Link to='/shop-react' className='footer__link'>Entrega</Link>
-                <Link to='/shop-react' className='footer__link'>Devolução</Link>
-                <Link to='/shop-react' className='footer__link'>Cancelamento</Link>
+                <Link to='/' className='footer__link'>Pedidos</Link>
+                <Link to='/' className='footer__link'>Entrega</Link>
+                <Link to='/' className='footer__link'>Devolução</Link>
+                <Link to='/' className='footer__link'>Cancelamento</Link>
             </article>
             <article>
                 <h4>Corporativo</h4>
-                <Link to='/shop-react' className='footer__link'>FAQ</Link>
-                <Link to='/shop-react' className='footer__link'>Imprensa</Link>
-                <Link to='/shop-react' className='footer__link'>Mpa do site</Link>
-                <Link to='/shop-react' className='footer__link'>Trabalhe Conosco</Link>
+                <Link to='/' className='footer__link'>FAQ</Link>
+                <Link to='/' className='footer__link'>Imprensa</Link>
+                <Link to='/' className='footer__link'>Mpa do site</Link>
+                <Link to='/' className='footer__link'>Trabalhe Conosco</Link>
             </article>
         </div>
         <div className="footer__copy">
