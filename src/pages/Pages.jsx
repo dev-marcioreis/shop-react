@@ -2,6 +2,7 @@ import React from 'react'
 import Banner from '../components/banner/Banner'
 import SliderCard from '../components/slider/SliderCard'
 import Category from '../components/category/Category'
+import Products from './products/Products'
 
 const Pages = () => {
   return (
@@ -12,6 +13,7 @@ const Pages = () => {
                     <Banner />
                     <SliderCard />
                     <Category />
+                    <Products />
                 </div>
             </div>
         </section>
