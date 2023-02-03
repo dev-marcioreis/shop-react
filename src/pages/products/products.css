@@ -59,6 +59,7 @@
     margin-block-end: .7rem;
 }
 .product__content p {
+    text-align: center;
     font-size: .9rem;
     font-weight: 300;
     margin-block-end: .7rem;
