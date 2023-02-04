@@ -2,7 +2,7 @@
     padding: 4rem 5rem;
 }
 .cart h2 {
-    margin-block-end: 3rem;
+    margin-block-end: 2rem;
     padding: .5rem;
     text-align: center;
     font-size: 2rem;
@@ -114,4 +114,12 @@
 .cart__product-quantity button {
     font-size: 1.4rem;
     cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .cart {
+        padding: 4rem 2rem;
+    }
+
 }
