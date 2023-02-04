@@ -1,12 +1,18 @@
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import './cart.css'
 import { FcHome as Home } from 'react-icons/fc'
 import { MdOutlineRemoveShoppingCart as Empty } from 'react-icons/md'
+import { removeFromCart } from '../../features/cartSlice'
 
 const Cart = () => {
 
   const cart = useSelector(state => state.cart)
+  const dispatch = useDispatch()
+
+  const handleRemoveFromCart = cartItem => {
+    dispatch(removeFromCart(cartItem))
+  }
 
   return (
     <>
@@ -40,7 +46,7 @@ const Cart = () => {
                           </div>
                           <div className='cart__info'>
                             <h3>{cartItem.name}</h3>
-                            <button>remover</button>
+                            <button onClick={() => handleRemoveFromCart(cartItem)}>remover</button>
                           </div>
                         </div>
                         <div className="cart__product-price">{cartItem.price}</div>
