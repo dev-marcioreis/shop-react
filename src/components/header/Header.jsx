@@ -1,4 +1,5 @@
 import './header.css'
+import { useSelector } from 'react-redux'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FcHome as Home, FcDecision as About, FcMultipleSmartphones as Categ, FcOnlineSupport as Contac, FcInTransit as Cart } from 'react-icons/fc'
@@ -6,6 +7,7 @@ import { FiMenu as Open } from 'react-icons/fi'
 import { AiOutlineClose as Close } from 'react-icons/ai'
 
 const Header = () => {
+  const { cartTotalQuantity } = useSelector(state => state.cart)
 
   const [mobileMenu, setMobileMenu] = useState(false)
 
@@ -33,7 +35,7 @@ const Header = () => {
               <div className="header__cart">
                 <Link to='/cart'>
                   <i><Cart /></i>
-                  <span className='header__count'>0</span>
+                  <span className='header__count'>{cartTotalQuantity}</span>
                 </Link>
               </div>
               <button className='header__btn ' onClick={() => setMobileMenu(!mobileMenu)}>

@@ -1,14 +1,19 @@
+import { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import './cart.css'
 import { FcHome as Home } from 'react-icons/fc'
 import { MdOutlineRemoveShoppingCart as Empty } from 'react-icons/md'
-import { addToCart, clearCart, decreaseCart, removeFromCart } from '../../features/cartSlice'
+import { addToCart, clearCart, decreaseCart, getTotals, removeFromCart } from '../../features/cartSlice'
 
 const Cart = () => {
 
   const cart = useSelector(state => state.cart)
   const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(getTotals())
+  }, [cart, dispatch])
 
   const handleRemoveFromCart = cartItem => {
     dispatch(removeFromCart(cartItem))
