@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './cart.css'
 import { FcHome as Home } from 'react-icons/fc'
 import { MdOutlineRemoveShoppingCart as Empty } from 'react-icons/md'
-import { addToCart, decreaseCart, removeFromCart } from '../../features/cartSlice'
+import { addToCart, clearCart, decreaseCart, removeFromCart } from '../../features/cartSlice'
 
 const Cart = () => {
 
@@ -20,6 +20,10 @@ const Cart = () => {
 
   const handleIncreaseCart = cartItem => {
     dispatch(addToCart(cartItem))
+  }
+
+  const handleClearCart = () => {
+    dispatch(clearCart())
   }
 
   return (
@@ -73,7 +77,7 @@ const Cart = () => {
                 <div>
                 </div>
                 <div className="cart__summary flex2">
-                  <button className='clear-cart'>Limpar carrinho</button>
+                  <button className='clear-cart' onClick={() => handleClearCart()}>Limpar carrinho</button>
                   <div className="cart__checkout">
                     <div className="cart__subtotoal flex2">
                       <span>subtotal</span>
