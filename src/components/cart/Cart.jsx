@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom'
 import './cart.css'
 import { FcHome as Home } from 'react-icons/fc'
 import { MdOutlineRemoveShoppingCart as Empty } from 'react-icons/md'
-import { RiDeleteBin6Line as Delete } from 'react-icons/ri'
-import { TbReportMoney as Money } from 'react-icons/tb'
-import { AiOutlineArrowLeft as Arrow } from 'react-icons/ai'
 
 const Cart = () => {
 
@@ -43,10 +40,7 @@ const Cart = () => {
                           </div>
                           <div className='cart__info'>
                             <h3>{cartItem.name}</h3>
-                            <button>
-                              <i><Delete /></i>
-                              <span>remover</span>
-                            </button>
+                            <button>remover</button>
                           </div>
                         </div>
                         <div className="cart__product-price">{cartItem.price}</div>
@@ -56,7 +50,7 @@ const Cart = () => {
                           <button>+</button>
                         </div>
                         <div className="cart__product-total-price">
-                          {cartItem.price * cartItem.cartQuantity}
+                          {cartItem.price}
                         </div>
                       </div>
                     ))
@@ -64,22 +58,16 @@ const Cart = () => {
                 </div>
                 <div>
                 </div>
-                <div className="cart__summary">
-                  <button className='clear-cart'>limpara carrinho</button>
+                <div className="cart__summary flex2">
+                  <button className='clear-cart'>Limpar carrinho</button>
                   <div className="cart__checkout">
-                    <div className="cart__subtotoal">
+                    <div className="cart__subtotoal flex2">
                       <span>subtotal</span>
                       <span className='cart__amount'>R$ {cart.cartTotalAmount}</span>
                     </div>
-                    <button className="cart__pay btn">
-                      <i><Money /></i>
-                      <span>pagar</span>
-                    </button>
+                    <button className="cart__pay btn">pagar</button>
+                    <Link to='/shop-react'>Voltar para comprar</Link>
                   </div>
-                  <Link to='/shop-react' className="home__shop-back">
-                    <i><Arrow /></i>
-                    <span>voltar para comprar</span>
-                  </Link>
                 </div>
               </>)
             }
