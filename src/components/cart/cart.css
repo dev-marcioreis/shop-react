@@ -12,6 +12,7 @@
 }
 .cart__empty {
     text-align: center;
+    height: 100vh;
 }
 .cart__empty p {
     font-size: 1.7rem;
