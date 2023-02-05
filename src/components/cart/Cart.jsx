@@ -88,7 +88,7 @@ const Cart = () => {
                   <div className="cart__checkout">
                     <div className="cart__subtotoal flex2">
                       <span>subtotal</span>
-                      <span className='cart__amount'>R$ {cart.cartTotalAmount}</span>
+                      <span className='cart__amount'>{cart.cartTotalAmount}</span>
                     </div>
                     <button className="cart__pay btn">pagar</button>
                   </div>

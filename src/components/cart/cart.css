@@ -1,5 +1,6 @@
 .cart {
     padding: 4rem 1rem;
+    height: 100vh;
 }
 .cart h2 {
     padding: .5rem;
@@ -12,7 +13,6 @@
 }
 .cart__empty {
     text-align: center;
-    height: 100vh;
 }
 .cart__empty p {
     font-size: 1.7rem;
