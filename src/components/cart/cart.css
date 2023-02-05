@@ -1,5 +1,5 @@
 .cart {
-    padding: 4rem 5rem;
+    padding: 4rem 1rem;
 }
 .cart h2 {
     padding: .5rem;
@@ -41,7 +41,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     align-items: center;
-    gap: 15rem;
+    gap: 12rem;
     padding: .5rem;
     margin-block-start: 4rem;
     border-bottom: 3px solid hsla(0, 0%, 100%, 0.082);
@@ -57,7 +57,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     align-items: center;
-    gap: 15rem;
+    gap: 12rem;
     border-bottom: 3px solid hsla(0, 0%, 100%, 0.082);
     margin-block-start: 2rem;
     margin-block-end: 2rem;
