@@ -250,22 +250,21 @@
     .cart__product-quantity button {
         color: var(--white-color);
     }
+    .cart__summary.flex2 {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
     .clear-cart {
-        padding: .7rem .4rem;
-        font-size: .7rem;
+        padding: .7rem;
     }
     .cart__subtotoal {
-        font-size: .9rem;
+        font-size: 1.2rem;
     }
     .cart__pay {
         margin-block-end: .7rem;
     }
     .cart__pay.btn {
-        padding: .5rem 1rem;
-        font-size: .9rem;
-    }
-    .cart__checkout a {
-        font-size: .9rem;
+        font-size: 1.1rem;
     }
 
 }
