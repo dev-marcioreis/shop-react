@@ -3,6 +3,7 @@ import Banner from '../components/banner/Banner'
 import SliderCard from '../components/slider/SliderCard'
 import Category from '../components/category/Category'
 import Products from './products/Products'
+import Footer from '../components/footer/Footer'
 
 const Pages = () => {
   return (
@@ -17,6 +18,7 @@ const Pages = () => {
                 </div>
             </div>
         </section>
+        <Footer />
     </>
   )
 }
