@@ -18,7 +18,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/shop-react' element={<Pages />} />
-        <Route path='/cart' element={<Cart />} />
+        <Route path='/shop-react/cart' element={<Cart />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />

@@ -33,7 +33,7 @@ const Header = () => {
               </li>
             </ul>
               <div className="header__cart">
-                <Link to='/cart'>
+                <Link to='/shop-react/cart'>
                   <i><Cart /></i>
                   <span className='header__count'>{cartTotalQuantity}</span>
                 </Link>

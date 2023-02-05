@@ -13,7 +13,7 @@ const Products = () => {
 
     const handleAddToCart = product => {
         dispatch(addToCart(product));
-        navigate('/cart')
+        navigate('/shop-react/cart')
     }
 
   return (
