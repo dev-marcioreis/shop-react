@@ -120,6 +120,15 @@
     background: var(--primary-color);
     color: var(--white-color);
 }
+.cart__summary a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: hsla(0, 0%, 100%, 0.616);
+    transition: var(--transition);
+}
+.cart__summary a:hover {
+    color: hsla(0, 0%, 100%, 0.363);
+}
 .cart__checkout {
     display: flex;
     flex-direction: column;
@@ -136,16 +145,6 @@
     letter-spacing: 4px;
     margin-block-end: 1.2rem;
 }
-.cart__checkout a {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--text-color);
-    transition: var(--transition);
-}
-.cart__checkout a:hover {
-    color: var(--black-color);
-}
-
 
 
 /*==========Media Query==========*/
@@ -187,15 +186,15 @@
     .clear-cart {
         font-size: .9rem;
     }
+    .cart__summary a {
+    font-size: 1rem;
+    }
     .cart__subtotoal {
         font-size: 1.2rem;
     }
     .cart__pay {
         letter-spacing: 3px;
         margin-block-end: 1rem;
-    }
-    .cart__checkout a {
-        font-size: 1rem;
     }
 
 }

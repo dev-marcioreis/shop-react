@@ -84,7 +84,7 @@ const Cart = () => {
                 </div>
                 <div className="cart__summary flex2">
                   <button className='clear-cart' onClick={() => handleClearCart()}>Limpar carrinho</button>
-                  <Link to='/shop-react'><Home />Voltar para comprar</Link>
+                  <Link to='/shop-react'><Home /> Voltar para comprar</Link>
                   <div className="cart__checkout">
                     <div className="cart__subtotoal flex2">
                       <span>subtotal</span>
