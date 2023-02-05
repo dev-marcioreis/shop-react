@@ -1,10 +1,11 @@
 import { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
+
 import './cart.css'
 import { FcHome as Home } from 'react-icons/fc'
 import { MdOutlineRemoveShoppingCart as Empty } from 'react-icons/md'
-import { addToCart, clearCart, decreaseCart, getTotals, removeFromCart } from '../../features/cartSlice'
+import { addToCart, clearCart, decreaseCart, getTotalAll, removeFromCart } from '../../features/cartSlice'
 
 const Cart = () => {
 
@@ -12,7 +13,7 @@ const Cart = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(getTotals())
+    dispatch(getTotalAll())
   }, [cart, dispatch])
 
   const handleRemoveFromCart = cartItem => {
@@ -73,7 +74,7 @@ const Cart = () => {
                           <button onClick={() => handleIncreaseCart(cartItem)}>+</button>
                         </div>
                         <div className="cart__product-total-price">
-                          {cartItem.price}
+                          {cartItem.price * cartItem.cartQuantity}
                         </div>
                       </div>
                     ))
