@@ -1,5 +1,5 @@
 # Shop (ReactJS)
-Projeto em desenvolvimento.<br>
+Projeto em desenvolvimento, 95% finalizado.<br>
 Este projeto será um E-Commerce em React 18.<br>
 React router<br>
 Redux toolkit<br>
