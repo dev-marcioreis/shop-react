@@ -6,7 +6,7 @@ Este projeto será um E-Commerce.
 
 ## 🚀 Em desenvolvimento...
 
-## 📋 Técnologias
+## 📋 Tecnologias
 React + Redux toolkit + hooks + React router + React icons + Jest + Slick + Express + Nodemon + Cors + Axios + toastify + Local Storage
 
 ## ✒️ Autor
